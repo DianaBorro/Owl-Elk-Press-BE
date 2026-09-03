@@ -1,12 +1,12 @@
-.idea/
+**/.idea/
 *.sln.iml
 
-[Bb]in/
-[Oo]bj/
+**/[Bb]in/
+**/[Oo]bj/
+*.user
 
-appsettings.json
-appsettings.Development.json
-appsettings.Production.json
+**/appsettings.json
+**/appsettings.*.json
 
 *.env
 *.env.*
