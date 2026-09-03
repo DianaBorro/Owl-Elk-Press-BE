@@ -10,26 +10,10 @@ public static class PaymentEndpoints
     {
         var group = app.MapGroup("/api/v1/payment");
 
-        group.MapPost("/create-checkout-session", (CheckoutRequest request) =>
+        group.MapPost("/create-checkout-session", (CheckoutRequest request, IStripeService stripeService) =>
         {
-            var options = new SessionCreateOptions
-            {
-                Mode = "payment",
-                SuccessUrl = "https://owlandelkpress.com{CHECKOUT_SESSION_ID}",
-                CancelUrl = "https://owlandelkpress.com",
-                LineItems = new List<SessionLineItemOptions>
-                {
-                    new SessionLineItemOptions
-                    {
-                        Price = request.PriceId,
-                        Quantity = 1,
-                    },
-                },
-            };
-            var service = new SessionService();
-            Session session = service.Create(options);
-
-            return Results.Ok(new { url = session.Url });
+            string checkoutUrl = stripeService.CreateCheckoutSession(request.PriceId);
+            return Results.Ok(new { url = checkoutUrl });
         }).RequireCors("AllowFrontend");
     }
 

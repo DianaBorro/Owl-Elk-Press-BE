@@ -20,6 +20,8 @@ builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.PropertyNameCaseInsensitive = true;
 });
 
+builder.Services.AddScoped<IStripeService, StripeService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -34,3 +36,5 @@ app.UseCors("AllowFrontend");
 app.MapPaymentEndpoints();  
 
 app.Run();
+
+public partial class Program { }

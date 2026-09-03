@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "owl-and-elk-press-BE", "owl-and-elk-press-BE\owl-and-elk-press-BE.csproj", "{78049B29-F526-4F1A-B2BB-315CC65A5482}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "owl-and-elk-press-BE.Tests", "owl-and-elk-press-BE.Tests\owl-and-elk-press-BE.Tests.csproj", "{C74B6C5A-91C3-409F-BD35-D293AC1E68E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{78049B29-F526-4F1A-B2BB-315CC65A5482}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78049B29-F526-4F1A-B2BB-315CC65A5482}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78049B29-F526-4F1A-B2BB-315CC65A5482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74B6C5A-91C3-409F-BD35-D293AC1E68E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74B6C5A-91C3-409F-BD35-D293AC1E68E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74B6C5A-91C3-409F-BD35-D293AC1E68E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74B6C5A-91C3-409F-BD35-D293AC1E68E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
