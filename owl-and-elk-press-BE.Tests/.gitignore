@@ -1,7 +1,0 @@
-**/bin/
-**/obj/
-
-*.dll
-*.pdb
-*.sourcelink.json
-*.txt
