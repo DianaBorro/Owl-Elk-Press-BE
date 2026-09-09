@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("owl-and-elk-press-BE.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e63d683916db86c274e104d18666258797ac9803")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f7a378c610f0f9865cc410212917cb0edc7e4aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("owl-and-elk-press-BE.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("owl-and-elk-press-BE.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

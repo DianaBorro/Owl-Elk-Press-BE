@@ -1,8 +1,6 @@
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/CoverletSourceRootsMapping_owl-and-elk-press-BE.Tests
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/owl-and-elk-press-BE.deps.json
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/owl-and-elk-press-BE.runtimeconfig.json
-/Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/appsettings.Development.json
-/Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/appsettings.json
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/owl-and-elk-press-BE.staticwebassets.endpoints.json
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/owl-and-elk-press-BE
 /Users/salt-dev/RiderProjects/owl-and-elk-press-BE/owl-and-elk-press-BE.Tests/bin/Debug/net10.0/MvcTestingAppManifest.json
