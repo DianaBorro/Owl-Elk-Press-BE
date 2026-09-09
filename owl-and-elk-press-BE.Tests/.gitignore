@@ -5,5 +5,5 @@
 *.pdb
 *.sourcelink.json
 *.txt
-.idea/
+**/.idea/
 *.sln.iml
