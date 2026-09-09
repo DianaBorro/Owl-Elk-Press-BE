@@ -16,4 +16,4 @@ COPY --from=build /app/out .
 
 ENV ASPNETCORE_URLS=http://+:${PORT}
 
-ENTRYPOINT ["dotnet", "OwlAndElkPress.dll"]
+ENTRYPOINT ["dotnet", "owl-and-elk-press-BE.dll"]
