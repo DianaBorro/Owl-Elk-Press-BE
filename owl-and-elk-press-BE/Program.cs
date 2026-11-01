@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authentication.Google;
 using owl_and_elk_press_BE.Endpoints;
 using Stripe;
 
@@ -24,7 +22,19 @@ builder.Services.ConfigureHttpJsonOptions(options =>
 });
 
 builder.Services.AddScoped<IStripeService, StripeService>();
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+    })
+    .AddCookie()
+    .AddGoogle(options =>
+    {
+        options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+        options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+    });
 
+builder.Services.AddControllers();
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -37,7 +47,7 @@ StripeConfiguration.ApiKey = app.Configuration["Stripe:SecretKey"];
 
 app.UseCors("AllowFrontend"); 
 app.MapPaymentEndpoints();  
-
+app.MapControllers();
 app.Run();
 
 public partial class Program { }
