@@ -17,7 +17,20 @@
       "applicationUrl": "https://localhost:7254;https://localhost:5013",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft.AspNetCore": "Warning"
+      }
+    },
+    "Authentication": {
+      "Google": {
+        "ClientId": "IL_TUO_GOOGLE_CLIENT_ID_://googleusercontent.com",
+        "ClientSecret": "IL_TUO_GOOGLE_CLIENT_SECRET_QUI"
       }
     }
   }
 }
+}
+
